@@ -55,9 +55,7 @@ def tracking_results(url=URL, n_selected=N_SELECTED, minutes=MINUTES, threshold=
             vote_totals.append(f'{int(vap):,}')
             percs.append(pvap)
         
-        df = pd.DataFrame(
-            {'Candidato': names, 'Votação': vote_totals, '%': percs}
-        )
+        df = pd.DataFrame({'Candidato': names, 'Votação': vote_totals, '%': percs})
 
         # resultados
         print('------------------------------')
@@ -67,9 +65,10 @@ def tracking_results(url=URL, n_selected=N_SELECTED, minutes=MINUTES, threshold=
         # ciclo
         time.sleep(60 * minutes)
 
-        if int(req_time[:2]) >= threshold:
+        if (int(req_time[:2]) >= threshold):
             track = False
 
 
 if __name__ == '__main__':
     tracking_results()
+
