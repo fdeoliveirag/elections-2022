@@ -16,7 +16,7 @@ import json
 import time
 import pandas as pd
 
-URL        = 'https://resultados.tse.jus.br/oficial/ele2022/544/dados-simplificados/br/br-c0001-e000544-r.json'
+URL        = 'https://resultados.tse.jus.br/oficial/ele2022/545/dados-simplificados/br/br-c0001-e000545-r.json'
 N_SELECTED = (13, 22, 12, 15)
 MINUTES    = 5
 THRESHOLD  = 23
